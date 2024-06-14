@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>  -->
+</head>
+<body>
+<div class="container" id="main-container">
+    <h2 class="todo-title">To Do List</h2>
+    <div class="todo-header">
+        <input type="text" placeholder="Enter task here" id="todo-input"/>
+        <button id="add-btn"> Add</button>
+        <button id="clear-btn"> clear</button>
+    </div>
+    <div id="filter-buttons">
+        <!-- <button id="all-tasks-btn">All Tasks</button>
+        <button id="pending-tasks-btn">Pending Tasks</button>
+        <button id="completed-tasks-btn">Completed Tasks</button> -->
+        <button id="all-tasks-btn">All Tasks <span id="all-task-count"></span></button>
+        <button id="pending-tasks-btn">Pending Tasks <span id="pending-task-count"></span></button>
+        <button id="completed-tasks-btn">Completed Tasks <span id="completed-task-count"></span></button>
+
+    </div>
+    <div class="headings">
+        <h2>Task</h2>
+        <h3>Edit<span>Delete</span> </h3> 
+    </div>
+    <div class="scrll">
+        <ul id="todo-items-list" class="todo-items-list"></ul>
+    </div>
+</div>
+<div id="toast-container"></div>
+<div id="yes"></div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
